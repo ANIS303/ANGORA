@@ -1,0 +1,46 @@
+body{
+    background-color: #0D0D0D;
+    color: #f9f6f6 !important;
+}
+.navsliding{
+    
+    height: 100vh;
+    padding: 1rem;
+    width: 250px;
+    left: 0px;
+    top: 0;
+    background-color: black;
+
+   
+}
+.navsliding ul{
+list-style: none;
+cursor: pointer;
+}
+.nheader img{
+    width:50px;
+}
+.nheader i{
+    cursor: pointer;
+}
+.icons{
+    cursor: pointer;
+}
+.side-menu{
+    left: -250px;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    
+    transition: .5s;
+}
+
+.boxing:hover .layer{
+    top: 0;
+}
+.col-md-3 , .col-md-4{
+    cursor: pointer;
+}

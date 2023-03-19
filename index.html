@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+<section>
+    <div class="container">
+        <div class="row" id="showdetalis">
+
+        </div>
+    </div>
+</section>
+
+  <div class="side-menu vh-100 position-fixed d-flex top-0 z-3 ">
+    <div class="navsliding d-flex justify-content-between flex-column ">
+        <div class="links">
+            <ul class=" text-white">
+                <li  class="py-2 position-relative cursor-pointer" id="Search">Search</li>
+                <li  class="py-2 position-relative cursor-pointer" id="Categories">Categories</li>
+                <li  class="py-2 position-relative cursor-pointer" id="Area">Area</li>
+                <li  class="py-2 position-relative cursor-pointer" id="Ingredients">Ingredients</li>
+                <li  class="py-2 position-relative cursor-pointer" id="Contact">Contact Us</li>
+            </ul>
+        </div>
+        <div class="nfooter text-white ">
+            <div class="icons ">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="footer">
+                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="nheader d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black  ">
+        <img class="logo" src="images/logo.png" alt="" srcset="">
+        <i class="fa-solid open-close-icon fa-2x fa-align-justify navButtom"></i>
+        <div>
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </div>
+</div>    
+<section>
+    <div class="container">
+        <div class="row justify-content-center d-none py-5" id="sersection">
+            <div class="col-sm-5 ">
+              <input type="text" class="form-control  bg-transparent text-white" placeholder="Search By Name" aria-label="First name" id="searchName">
+            </div>
+            <div class="col-sm-5">
+              <input type="text" class="form-control bg-transparent text-white" placeholder="Search By First Letter" aria-label="Last name" id="searchLtter">
+            </div>
+          </div>   
+         <div class="row" id="searching" >
+
+         </div>
+         </div>
+</section>
+
+<section >
+    <div class="container pt-5 text-center">
+        <div class="row g-4 " id="ganeral">
+           
+        </div>
+    </div>
+    
+</section>
+
+<section >
+    <div class="container pt-5 text-center">
+        <div class="row g-4 d-none" id="showgate">
+           
+        </div>
+    </div>
+    
+</section>
+<section >
+    <div class="container pt-5 text-center">
+        <div class="row g-4 d-none" id="showarea">
+           
+        </div>
+    </div>
+    
+</section>
+
+<section >
+    <div class="container pt-5 text-center">
+        <div class="row g-4 d-none" id="showintgar">
+           
+        </div>
+    </div>
+    
+</section>
+<section >
+    <div class="contact  d-flex justify-content-center align-items-center  d-none" id="showcontact">
+        <div class="container w-75 text-center">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <input id="nameInput"  type="text" class="form-control" placeholder="Enter Your Name">
+                    <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Special characters and numbers not allowed
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="emailInput"  type="email" class="form-control " placeholder="Enter Your Email">
+                    <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Email not valid *exemple@yyy.zzz
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="phoneInput"  type="text" class="form-control " placeholder="Enter Your Phone">
+                    <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Enter valid Phone Number
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="ageInput"  type="number" class="form-control " placeholder="Enter Your Age">
+                    <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Enter valid age
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input  id="passwordInput"  type="password" class="form-control " placeholder="Enter Your Password">
+                    <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input  id="repasswordInput"  type="password" class="form-control " placeholder="Repassword">
+                    <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                        Enter valid repassword 
+                    </div>
+                </div>
+            </div>
+            <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">Submit</button>
+        </div>
+        </div>
+    
+
+</section>
+
+
+<script src="javascript/jquery-3.6.3.min.js"></script>
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/index.js"></script>
+</body>
+</html>

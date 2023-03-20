@@ -73,6 +73,7 @@ return response;
 sar("s","pizza");
 
 $("#Search").click(function(){
+
     $("#sersection").removeClass("d-none")
 
     $("#ganeral").removeClass("d-none")
@@ -216,40 +217,6 @@ $("#Contact").click(async function(){
 });
 
 
-function showDetails(meal) {
-    let content = `
-    
-    < <div class="col-md-4">
-    <img class="w-100 rounded-3" src="${meal.strMealThumb}"
-        alt="">
-        <h2>${meal.strMeal}</h2>
-</div>
-<div class="col-md-8">
-    <h2>Instructions</h2>
-    <p>${meal.strInstructions}</p>
-    <h3><span class="fw-bolder">Area : </span>${meal.strArea}</h3>
-    <h3><span class="fw-bolder">Category : </span>${meal.strCategory}</h3>
-    <h3>Recipes :</h3>
-    <ul class="list-unstyled d-flex g-3 flex-wrap">
-        ${ingredients}
-    </ul>
-
-    <h3>Tags :</h3>
-    <ul class="list-unstyled d-flex g-3 flex-wrap">
-        ${tagsStr}
-    </ul>
-
-    <a target="_blank" href="${meal.strSource}" class="btn btn-success">Source</a>
-    <a target="_blank" href="${meal.strYoutube}" class="btn btn-danger">Youtube</a>
-</div>`
-
-   $("#showdetalis").html = content;
-}
-
-$("div").click(function(){
-    console.log("hiiiiiiiiiiiii");
-    showDetails(meal.idMeal)
-})
 
 function showContacts() {
    

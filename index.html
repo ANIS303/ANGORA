@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-black">
-<section>
-    <div class="container">
-        <div class="row" id="showdetalis">
-
-        </div>
-    </div>
-</section>
-
-  <div class="side-menu vh-100 position-fixed d-flex top-0 z-3 ">
-    <div class="navsliding d-flex justify-content-between flex-column ">
+<body class="bg-black main">
+    <div class="loader mx-auto d-none">
+        <div class="wrapper">
+          <span class="side side1"></span>
+          <span class="side side2"></span>
+          <span class="side side3"></span>
+          <span class="side side4"></span>
+          <span class="shadow"></span>
+        </div>  
+      </div>
+  <div class="side-menu vh-100 position-fixed d-flex top-0 z-3   ">
+    <div class="navsliding d-flex justify-content-between flex-column my-auto">
         <div class="links">
             <ul class=" text-white">
                 <li  class="py-2 position-relative cursor-pointer" id="Search">Search</li>
@@ -32,16 +35,16 @@
         <div class="nfooter text-white ">
             <div class="icons ">
                 <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-solid fa-globe"></i>
-            </div>
+                <i class="fa-brands fa-github px-2"></i>
+                        </div>
             <div class="footer">
-                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                <span>Copyright Â© 2019 All Rights <br>Reserved.</span>
+                <p class="text-danger">By Anis</p>
             </div>
         </div>
     </div>
-    <div class="nheader d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black  ">
-        <img class="logo" src="images/logo.png" alt="" srcset="">
+    <div class="nheader d-flex flex-column justify-content-between py-4 text-center px-2  bg-white text-black my-auto ">
+              <a href=""> <img class="logo" src="images/logo.png" alt="" srcset=""></a>
         <i class="fa-solid open-close-icon fa-2x fa-align-justify navButtom"></i>
         <div>
             <i class="fa-solid fa-globe d-block"></i>
@@ -49,107 +52,97 @@
         </div>
     </div>
 </div>    
+
 <section>
+    <div class="container ">
+        <div class="row py-5 d-none" id="searching">
+
+            <input type="text" name="text" class="input mx-auto" id="searlitter" placeholder="Type litter of meal">
+            <input type="text" name="text" class="input mx-auto" id="searName" placeholder="Type name of meal">
+
+        </div>
+    </div>
+</section>
+
+
+<div class="container me-5 mt-5">
+    <div class="row g-4 " id="random">
+            
+    </div>
+</div>
+
+
+
+<div class="container" id="category">
+    <div class="row d-none" id="showgate">
+
+    </div>
     <div class="container">
-        <div class="row justify-content-center d-none py-5" id="sersection">
-            <div class="col-sm-5 ">
-              <input type="text" class="form-control  bg-transparent text-white" placeholder="Search By Name" aria-label="First name" id="searchName">
-            </div>
-            <div class="col-sm-5">
-              <input type="text" class="form-control bg-transparent text-white" placeholder="Search By First Letter" aria-label="Last name" id="searchLtter">
-            </div>
-          </div>   
-         <div class="row" id="searching" >
-
-         </div>
-         </div>
-</section>
-
-<section >
-    <div class="container pt-5 text-center">
-        <div class="row g-4 " id="ganeral">
-           
+        <div class="row g-3" id="showCategotyDetali">
+    
         </div>
     </div>
-    
-</section>
 
-<section >
-    <div class="container pt-5 text-center">
-        <div class="row g-4 d-none" id="showgate">
-           
+</div>
+
+
+
+
+<div class="container my-5" id="area">
+    <div class="row d-none g-3" id="showarea">
+
+    </div>
+    <div class="container">
+        <div class="row d-none" id="showareaDetail">
+    
         </div>
     </div>
+
+</div>
+
+
+
+<div class="container" id="ingredient">
+    <div class="row g-3" id="showintgarDetali">
+        
+    </div>
+    <div class="container">
+        <div class="row g-3 d-none" id="showintgar">
     
-</section>
-<section >
-    <div class="container pt-5 text-center">
-        <div class="row g-4 d-none" id="showarea">
-           
         </div>
     </div>
-    
-</section>
 
-<section >
-    <div class="container pt-5 text-center">
-        <div class="row g-4 d-none" id="showintgar">
-           
-        </div>
+
+</div>
+
+<div class="container m-5 m-auto">
+    <div class="row d-none g-3" id="idDetails">
+        
     </div>
     
-</section>
-<section >
-    <div class="contact  d-flex justify-content-center align-items-center  d-none" id="showcontact">
-        <div class="container w-75 text-center">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <input id="nameInput"  type="text" class="form-control" placeholder="Enter Your Name">
-                    <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
-                        Special characters and numbers not allowed
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <input id="emailInput"  type="email" class="form-control " placeholder="Enter Your Email">
-                    <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
-                        Email not valid *exemple@yyy.zzz
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <input id="phoneInput"  type="text" class="form-control " placeholder="Enter Your Phone">
-                    <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
-                        Enter valid Phone Number
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <input id="ageInput"  type="number" class="form-control " placeholder="Enter Your Age">
-                    <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
-                        Enter valid age
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <input  id="passwordInput"  type="password" class="form-control " placeholder="Enter Your Password">
-                    <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
-                        Enter valid password *Minimum eight characters, at least one letter and one number:*
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <input  id="repasswordInput"  type="password" class="form-control " placeholder="Repassword">
-                    <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
-                        Enter valid repassword 
-                    </div>
-                </div>
-            </div>
-            <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">Submit</button>
-        </div>
-        </div>
+</div>
+
+<div class="container mt-5 box-content d-none">
+    <div class="contact-form">
+        <span class="heading text-white">Contact Us</span>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" required="">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required=""></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     
+</div>  
 
-</section>
 
 
-<script src="javascript/jquery-3.6.3.min.js"></script>
 <script src="javascript/bootstrap.min.js"></script>
-<script src="javascript/index.js"></script>
+<script src="javascript/jquery-3.6.3.min.js"></script>
+
+<script src="javascript/my js/index.js" type="module"></script>
 </body>
 </html>
